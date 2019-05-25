@@ -3,8 +3,14 @@ import { Alert, StyleSheet, Text, View, Button, Image } from 'react-native';
 import { Facebook } from 'expo';
 
 const FB_APP_ID = 'fb297781467791687';
+//facebook links used:
+//https://docs.expo.io/versions/latest/sdk/facebook/
+//https://www.youtube.com/watch?v=ThcelIFSMWQ
+//https://stackoverflow.com/questions/38261112/facebook-redirect-uri-set-to-ios-url-scheme
 
 export default class FirstPage extends React.Component {
+
+  //for facebook login
   async logIn() {
     try {
           const {
