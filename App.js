@@ -5,9 +5,11 @@ import { Constants } from 'expo';
 
 // You can import from local files
 import FirstPage from './components/FirstPage';
+import HomeScreen from './components/HomeScreen';
 
 const rootStack = createStackNavigator({
   FirstPage:FirstPage,
+  Home:HomeScreen,
 },
 {
   initialRouteName: 'FirstPage'
