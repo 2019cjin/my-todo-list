@@ -2,12 +2,12 @@ import React from 'react';
 import { StyleSheet, Text, View, Button, TouchableOpacity, Image } from 'react-native';
 import { createStackNavigator, createAppContainer } from 'react-navigation';
 
-export default class HomeScreen extends React.Component {
+export default class ViewCalendar extends React.Component {
 
     //https://medium.freecodecamp.org/how-to-build-a-nested-drawer-menu-with-react-native-a1c2fdcab6c9
 
     static navigationOptions = {
-        title: 'Home',
+        title: 'Calendar',
         headerStyle: {
           backgroundColor: '#59ADFF',
         },
@@ -30,17 +30,7 @@ export default class HomeScreen extends React.Component {
     render() {
       return (
         <View style={styles.container}>
-          <Text style = {styles.text}>Hello, !</Text>
-
-          <View style={styles.navigationControls}>
-            <TouchableOpacity style = {[styles.button, {backgroundColor: '#F89E22'}]} onPress={()=>{this.props.navigation.navigate('ViewCalendar');}}>
-                <Text style = {styles.buttonText}>View Calendar</Text>
-            </TouchableOpacity>
-
-            <TouchableOpacity style = {[styles.button, {backgroundColor: '#22F885'}]} onPress={()=>{this.props.navigation.navigate('AddNewEvent');}}>
-                <Text style = {styles.buttonText}>Add New Event or Task</Text>
-            </TouchableOpacity>
-          </View>
+          <Text style = {styles.text}>View Calendar</Text>
           
         </View>
       );
